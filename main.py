@@ -2,7 +2,7 @@ from fastapi import FastAPI,HTTPException
 from mangum import Mangum
 import os
 import psycopg2
-from psycog2.extras import RealDictCursor
+from psycopg2.extras import RealDictCursor
 
 app = FastAPI()
 DB_URL: os.environ.get("DATABASE_URL")
