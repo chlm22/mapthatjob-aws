@@ -4,7 +4,7 @@ import os
 import psycopg2
 from psycopg2.extras import RealDictCursor
 
-app = FastAPI()
+app = FastAPI(root_path="/default")
 
 DB_URL = os.environ.get("DATABASE_URL")
 
